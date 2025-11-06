@@ -1,0 +1,1 @@
+# Automatizovane testování kurz 2025
