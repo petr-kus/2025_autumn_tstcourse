@@ -28,7 +28,7 @@ assert inventory_container.is_displayed()
 first_item = driver.find_element(By.CLASS_NAME, "inventory_item_name")
 first_item.click()
 
-time.sleep(2)
+time.sleep(5)
 
 driver.quit()
 
