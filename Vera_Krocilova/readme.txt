@@ -2,6 +2,6 @@ Kurz - testovani
 
 
 
-TEST
+
 
 Budou zde moje budouci testy. 
