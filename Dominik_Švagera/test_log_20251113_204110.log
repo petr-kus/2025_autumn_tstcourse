@@ -1,0 +1,18 @@
+2025-11-13 20:41:10,757 - INFO - ========== Test execution started ==========
+2025-11-13 20:41:10,757 - DEBUG - setup() called with no input parameters
+2025-11-13 20:41:10,758 - INFO - ====== WebDriver manager ======
+2025-11-13 20:41:12,333 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-13 20:41:12,335 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-13 20:41:12,751 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14088
+2025-11-13 20:41:12,801 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-13 20:41:12,805 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-13 20:41:13,185 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14088
+2025-11-13 20:41:13,216 - INFO - Driver [C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-13 20:41:13,217 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe
+2025-11-13 20:41:13,229 - DEBUG - Started executable: `C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe` in a child process with pid: 28840 using 0 to output -3
+2025-11-13 20:41:13,750 - DEBUG - POST http://localhost:58638/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2025-11-13 20:41:13,751 - DEBUG - Starting new HTTP connection (1): localhost:58638
+2025-11-13 20:41:14,495 - DEBUG - http://localhost:58638 "POST /session HTTP/1.1" 200 0
+2025-11-13 20:41:14,495 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"142.0.7444.59","chrome":{"chromedriverVersion":"142.0.7444.162 (c076baf266c3ed5efb225de664cfa7b183668ad6-refs/branch-heads/7444@{#2498})","userDataDir":"C:\\Users\\DOMINI~1.SVA\\AppData\\Local\\Temp\\scoped_dir28840_1437375187"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:58641"},"goog:processID":33744,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5c1c04df474c26974cdd8d17170969a3"}} | headers=HTTPHeaderDict({'Content-Length': '913', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-13 20:41:14,496 - DEBUG - Finished Request
+2025-11-13 20:41:14,496 - INFO - Browser setup completed successfully
