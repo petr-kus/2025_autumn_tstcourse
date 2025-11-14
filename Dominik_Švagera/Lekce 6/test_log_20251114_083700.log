@@ -1,0 +1,73 @@
+2025-11-14 08:37:00,195 - INFO - <module> - === Starting test execution ===
+2025-11-14 08:37:00,196 - DEBUG - setup - setup called - initializing Chrome driver
+2025-11-14 08:37:00,196 - INFO - log - ====== WebDriver manager ======
+2025-11-14 08:37:02,249 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 08:37:02,253 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 08:37:02,679 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 08:37:02,714 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 08:37:02,725 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 08:37:03,135 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 08:37:03,175 - INFO - log - Driver [C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-14 08:37:03,176 - DEBUG - _binary_paths - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe
+2025-11-14 08:37:03,192 - DEBUG - _start_process - Started executable: `C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe` in a child process with pid: 8624 using 0 to output -3
+2025-11-14 08:37:03,698 - DEBUG - execute - POST http://localhost:60161/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2025-11-14 08:37:03,699 - DEBUG - _new_conn - Starting new HTTP connection (1): localhost:60161
+2025-11-14 08:37:04,646 - DEBUG - _make_request - http://localhost:60161 "POST /session HTTP/1.1" 200 0
+2025-11-14 08:37:04,647 - DEBUG - _request - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"142.0.7444.59","chrome":{"chromedriverVersion":"142.0.7444.162 (c076baf266c3ed5efb225de664cfa7b183668ad6-refs/branch-heads/7444@{#2498})","userDataDir":"C:\\Users\\DOMINI~1.SVA\\AppData\\Local\\Temp\\scoped_dir8624_738699681"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:60164"},"goog:processID":19612,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"e3ee848e99c7714e29b834a807401a2b"}} | headers=HTTPHeaderDict({'Content-Length': '911', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:04,647 - DEBUG - _request - Finished Request
+2025-11-14 08:37:04,648 - INFO - setup - Chrome driver initialized successfully
+2025-11-14 08:37:04,648 - DEBUG - test_load_login_page - test_load_login_page called with URL=https://www.saucedemo.com/
+2025-11-14 08:37:04,648 - DEBUG - execute - POST http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/url {'url': 'https://www.saucedemo.com/'}
+2025-11-14 08:37:05,576 - DEBUG - _make_request - http://localhost:60161 "POST /session/e3ee848e99c7714e29b834a807401a2b/url HTTP/1.1" 200 0
+2025-11-14 08:37:05,577 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:05,578 - DEBUG - _request - Finished Request
+2025-11-14 08:37:05,578 - DEBUG - execute - GET http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/title {}
+2025-11-14 08:37:06,489 - DEBUG - _make_request - http://localhost:60161 "GET /session/e3ee848e99c7714e29b834a807401a2b/title HTTP/1.1" 200 0
+2025-11-14 08:37:06,490 - DEBUG - _request - Remote response: status=200 | data={"value":"Swag Labs"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,490 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,491 - DEBUG - execute - GET http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/title {}
+2025-11-14 08:37:06,501 - DEBUG - _make_request - http://localhost:60161 "GET /session/e3ee848e99c7714e29b834a807401a2b/title HTTP/1.1" 200 0
+2025-11-14 08:37:06,501 - DEBUG - _request - Remote response: status=200 | data={"value":"Swag Labs"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,502 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,503 - INFO - test_load_login_page - ✅ Login page loaded successfully - title: Swag Labs
+2025-11-14 08:37:06,503 - DEBUG - test_login_user - test_login_user called with username=problem_user, password=************
+2025-11-14 08:37:06,504 - DEBUG - execute - POST http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/element {'using': 'css selector', 'value': '[id="user-name"]'}
+2025-11-14 08:37:06,518 - DEBUG - _make_request - http://localhost:60161 "POST /session/e3ee848e99c7714e29b834a807401a2b/element HTTP/1.1" 200 0
+2025-11-14 08:37:06,519 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,520 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,520 - DEBUG - execute - POST http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/element/f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.3/value {'text': 'problem_user', 'value': ['p', 'r', 'o', 'b', 'l', 'e', 'm', '_', 'u', 's', 'e', 'r']}
+2025-11-14 08:37:06,613 - DEBUG - _make_request - http://localhost:60161 "POST /session/e3ee848e99c7714e29b834a807401a2b/element/f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.3/value HTTP/1.1" 200 0
+2025-11-14 08:37:06,614 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,615 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,615 - DEBUG - execute - POST http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/element {'using': 'css selector', 'value': '[id="password"]'}
+2025-11-14 08:37:06,628 - DEBUG - _make_request - http://localhost:60161 "POST /session/e3ee848e99c7714e29b834a807401a2b/element HTTP/1.1" 200 0
+2025-11-14 08:37:06,629 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,630 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,631 - DEBUG - execute - POST http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/element/f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.4/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+2025-11-14 08:37:06,696 - DEBUG - _make_request - http://localhost:60161 "POST /session/e3ee848e99c7714e29b834a807401a2b/element/f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.4/value HTTP/1.1" 200 0
+2025-11-14 08:37:06,697 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,698 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,698 - DEBUG - execute - POST http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/element {'using': 'css selector', 'value': '[id="login-button"]'}
+2025-11-14 08:37:06,711 - DEBUG - _make_request - http://localhost:60161 "POST /session/e3ee848e99c7714e29b834a807401a2b/element HTTP/1.1" 200 0
+2025-11-14 08:37:06,711 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.5"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,712 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,712 - DEBUG - execute - POST http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/element/f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.5/click {}
+2025-11-14 08:37:06,829 - DEBUG - _make_request - http://localhost:60161 "POST /session/e3ee848e99c7714e29b834a807401a2b/element/f.C8CBD3BB89E51265D0D0FCE72A029D6C.d.C35AD7327BD6E96EB66BD27C3AB74B84.e.5/click HTTP/1.1" 200 0
+2025-11-14 08:37:06,830 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,830 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,831 - DEBUG - execute - GET http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/url {}
+2025-11-14 08:37:06,839 - DEBUG - _make_request - http://localhost:60161 "GET /session/e3ee848e99c7714e29b834a807401a2b/url HTTP/1.1" 200 0
+2025-11-14 08:37:06,840 - DEBUG - _request - Remote response: status=200 | data={"value":"https://www.saucedemo.com/inventory.html"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,840 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,841 - DEBUG - execute - GET http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b/url {}
+2025-11-14 08:37:06,848 - DEBUG - _make_request - http://localhost:60161 "GET /session/e3ee848e99c7714e29b834a807401a2b/url HTTP/1.1" 200 0
+2025-11-14 08:37:06,849 - DEBUG - _request - Remote response: status=200 | data={"value":"https://www.saucedemo.com/inventory.html"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:06,849 - DEBUG - _request - Finished Request
+2025-11-14 08:37:06,850 - INFO - test_login_user - ✅ Login test proběhl úspěšně – user 'problem_user' je přihlášen nva inentory stránce 'https://www.saucedemo.com/inventory.html'.
+2025-11-14 08:37:06,850 - DEBUG - teardown - teardown called - quitting driver
+2025-11-14 08:37:06,851 - DEBUG - execute - DELETE http://localhost:60161/session/e3ee848e99c7714e29b834a807401a2b {}
+2025-11-14 08:37:07,234 - DEBUG - _make_request - http://localhost:60161 "DELETE /session/e3ee848e99c7714e29b834a807401a2b HTTP/1.1" 200 0
+2025-11-14 08:37:07,237 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:37:07,240 - DEBUG - _request - Finished Request
+2025-11-14 08:37:09,380 - INFO - teardown - Driver quit successfully
+2025-11-14 08:37:09,380 - INFO - <module> - === Test execution completed ===

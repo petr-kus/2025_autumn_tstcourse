@@ -1,0 +1,337 @@
+2025-11-14 09:26:27,718 - INFO - <module> - === Starting test execution ===
+2025-11-14 09:26:27,719 - DEBUG - setup - setup called - initializing Chrome driver
+2025-11-14 09:26:27,719 - INFO - log - ====== WebDriver manager ======
+2025-11-14 09:26:29,875 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 09:26:29,879 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 09:26:30,294 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 09:26:30,328 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 09:26:30,331 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 09:26:30,727 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 09:26:30,761 - INFO - log - Driver [C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-14 09:26:30,763 - DEBUG - _binary_paths - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe
+2025-11-14 09:26:30,778 - DEBUG - _start_process - Started executable: `C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe` in a child process with pid: 9500 using 0 to output -3
+2025-11-14 09:26:31,290 - DEBUG - execute - POST http://localhost:54274/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2025-11-14 09:26:31,291 - DEBUG - _new_conn - Starting new HTTP connection (1): localhost:54274
+2025-11-14 09:26:32,193 - DEBUG - _make_request - http://localhost:54274 "POST /session HTTP/1.1" 200 0
+2025-11-14 09:26:32,194 - DEBUG - _request - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"142.0.7444.59","chrome":{"chromedriverVersion":"142.0.7444.162 (c076baf266c3ed5efb225de664cfa7b183668ad6-refs/branch-heads/7444@{#2498})","userDataDir":"C:\\Users\\DOMINI~1.SVA\\AppData\\Local\\Temp\\scoped_dir9500_1610447773"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:54277"},"goog:processID":16336,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"bd7f3dbdb3ac229c72e03512fc9eb162"}} | headers=HTTPHeaderDict({'Content-Length': '912', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:32,194 - DEBUG - _request - Finished Request
+2025-11-14 09:26:32,195 - INFO - setup - Chrome driver initialized successfully
+2025-11-14 09:26:32,195 - DEBUG - test_load_login_page - test_load_login_page called with URL=https://www.saucedemo.com/
+2025-11-14 09:26:32,196 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/url {'url': 'https://www.saucedemo.com/'}
+2025-11-14 09:26:33,895 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/url HTTP/1.1" 200 0
+2025-11-14 09:26:33,896 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:33,896 - DEBUG - _request - Finished Request
+2025-11-14 09:26:33,897 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/title {}
+2025-11-14 09:26:33,908 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/title HTTP/1.1" 200 0
+2025-11-14 09:26:33,909 - DEBUG - _request - Remote response: status=200 | data={"value":"Swag Labs"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:33,912 - DEBUG - _request - Finished Request
+2025-11-14 09:26:33,913 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/title {}
+2025-11-14 09:26:33,923 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/title HTTP/1.1" 200 0
+2025-11-14 09:26:33,924 - DEBUG - _request - Remote response: status=200 | data={"value":"Swag Labs"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:33,924 - DEBUG - _request - Finished Request
+2025-11-14 09:26:33,925 - INFO - test_load_login_page - ✅ Login page loaded successfully - title: Swag Labs
+2025-11-14 09:26:33,925 - DEBUG - test_login_user - test_login_user called with username=problem_user, password=************
+2025-11-14 09:26:33,926 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element {'using': 'css selector', 'value': '[id="user-name"]'}
+2025-11-14 09:26:33,944 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element HTTP/1.1" 200 0
+2025-11-14 09:26:33,944 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.2"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:33,945 - DEBUG - _request - Finished Request
+2025-11-14 09:26:33,945 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.2/value {'text': 'problem_user', 'value': ['p', 'r', 'o', 'b', 'l', 'e', 'm', '_', 'u', 's', 'e', 'r']}
+2025-11-14 09:26:34,042 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.2/value HTTP/1.1" 200 0
+2025-11-14 09:26:34,042 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,043 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,044 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element {'using': 'css selector', 'value': '[id="password"]'}
+2025-11-14 09:26:34,057 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element HTTP/1.1" 200 0
+2025-11-14 09:26:34,058 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,059 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,059 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.3/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+2025-11-14 09:26:34,118 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.3/value HTTP/1.1" 200 0
+2025-11-14 09:26:34,119 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,120 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,120 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element {'using': 'css selector', 'value': '[id="login-button"]'}
+2025-11-14 09:26:34,132 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element HTTP/1.1" 200 0
+2025-11-14 09:26:34,133 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,134 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,134 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.4/click {}
+2025-11-14 09:26:34,231 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.4/click HTTP/1.1" 200 0
+2025-11-14 09:26:34,233 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,233 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,234 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/url {}
+2025-11-14 09:26:34,243 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/url HTTP/1.1" 200 0
+2025-11-14 09:26:34,244 - DEBUG - _request - Remote response: status=200 | data={"value":"https://www.saucedemo.com/inventory.html"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,245 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,245 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/url {}
+2025-11-14 09:26:34,251 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/url HTTP/1.1" 200 0
+2025-11-14 09:26:34,251 - DEBUG - _request - Remote response: status=200 | data={"value":"https://www.saucedemo.com/inventory.html"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,252 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,252 - INFO - test_login_user - ✅ Login test proběhl úspěšně – user 'problem_user' je přihlášen nva inentory stránce 'https://www.saucedemo.com/inventory.html'.
+2025-11-14 09:26:34,252 - DEBUG - test_product_filters - test_product_filters called
+2025-11-14 09:26:34,253 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element {'using': 'css selector', 'value': '.product_sort_container'}
+2025-11-14 09:26:34,266 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element HTTP/1.1" 200 0
+2025-11-14 09:26:34,267 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,267 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,268 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/name {}
+2025-11-14 09:26:34,275 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/name HTTP/1.1" 200 0
+2025-11-14 09:26:34,276 - DEBUG - _request - Remote response: status=200 | data={"value":"select"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,277 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,277 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/attribute/multiple {}
+2025-11-14 09:26:34,283 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/attribute/multiple HTTP/1.1" 200 0
+2025-11-14 09:26:34,284 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,284 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,285 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements {'using': 'tag name', 'value': 'option'}
+2025-11-14 09:26:34,297 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements HTTP/1.1" 200 0
+2025-11-14 09:26:34,298 - DEBUG - _request - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.24"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.26"}]} | headers=HTTPHeaderDict({'Content-Length': '479', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,299 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,299 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text {}
+2025-11-14 09:26:34,313 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text HTTP/1.1" 200 0
+2025-11-14 09:26:34,314 - DEBUG - _request - Remote response: status=200 | data={"value":"Name (A to Z)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,314 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,315 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/text {}
+2025-11-14 09:26:34,323 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/text HTTP/1.1" 200 0
+2025-11-14 09:26:34,324 - DEBUG - _request - Remote response: status=200 | data={"value":"Name (Z to A)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,324 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,324 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.24/text {}
+2025-11-14 09:26:34,332 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.24/text HTTP/1.1" 200 0
+2025-11-14 09:26:34,333 - DEBUG - _request - Remote response: status=200 | data={"value":"Price (low to high)"} | headers=HTTPHeaderDict({'Content-Length': '31', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,333 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,334 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.26/text {}
+2025-11-14 09:26:34,342 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.26/text HTTP/1.1" 200 0
+2025-11-14 09:26:34,343 - DEBUG - _request - Remote response: status=200 | data={"value":"Price (high to low)"} | headers=HTTPHeaderDict({'Content-Length': '31', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,343 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,343 - INFO - test_product_filters - Nalezeno 4 možností filtrování: Name (A to Z), Name (Z to A), Price (low to high), Price (high to low)
+2025-11-14 09:26:34,344 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text {}
+2025-11-14 09:26:34,351 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text HTTP/1.1" 200 0
+2025-11-14 09:26:34,352 - DEBUG - _request - Remote response: status=200 | data={"value":"Name (A to Z)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,352 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,354 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20'}, 'value']}
+2025-11-14 09:26:34,363 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:34,364 - DEBUG - _request - Remote response: status=200 | data={"value":"az"} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,365 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,365 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements {'using': 'css selector', 'value': 'option[value ="az"]'}
+2025-11-14 09:26:34,378 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements HTTP/1.1" 200 0
+2025-11-14 09:26:34,379 - DEBUG - _request - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,379 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,380 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/selected {}
+2025-11-14 09:26:34,392 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/selected HTTP/1.1" 200 0
+2025-11-14 09:26:34,392 - DEBUG - _request - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:34,393 - DEBUG - _request - Finished Request
+2025-11-14 09:26:34,393 - DEBUG - wait_to_see - wait_to_see called with wait=1
+2025-11-14 09:26:35,394 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements {'using': 'tag name', 'value': 'option'}
+2025-11-14 09:26:35,411 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements HTTP/1.1" 200 0
+2025-11-14 09:26:35,411 - DEBUG - _request - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.24"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.26"}]} | headers=HTTPHeaderDict({'Content-Length': '479', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,412 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,413 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/selected {}
+2025-11-14 09:26:35,432 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/selected HTTP/1.1" 200 0
+2025-11-14 09:26:35,433 - DEBUG - _request - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,434 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,434 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text {}
+2025-11-14 09:26:35,451 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text HTTP/1.1" 200 0
+2025-11-14 09:26:35,454 - DEBUG - _request - Remote response: status=200 | data={"value":"Name (A to Z)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,456 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,456 - DEBUG - test_product_filters - Filtr 'Name (A to Z)' úspěšně aplikován
+2025-11-14 09:26:35,457 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/elements {'using': 'css selector', 'value': '.inventory_item'}
+2025-11-14 09:26:35,475 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/elements HTTP/1.1" 200 0
+2025-11-14 09:26:35,478 - DEBUG - _request - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.30"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.31"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.32"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.33"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.34"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.35"}]} | headers=HTTPHeaderDict({'Content-Length': '713', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,479 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,480 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/text {}
+2025-11-14 09:26:35,495 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/text HTTP/1.1" 200 0
+2025-11-14 09:26:35,496 - DEBUG - _request - Remote response: status=200 | data={"value":"Name (Z to A)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,496 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,497 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22'}, 'value']}
+2025-11-14 09:26:35,505 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:35,506 - DEBUG - _request - Remote response: status=200 | data={"value":"za"} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,506 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,506 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements {'using': 'css selector', 'value': 'option[value ="za"]'}
+2025-11-14 09:26:35,519 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements HTTP/1.1" 200 0
+2025-11-14 09:26:35,519 - DEBUG - _request - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,520 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,520 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/selected {}
+2025-11-14 09:26:35,531 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/selected HTTP/1.1" 200 0
+2025-11-14 09:26:35,531 - DEBUG - _request - Remote response: status=200 | data={"value":false} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,532 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,533 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/enabled {}
+2025-11-14 09:26:35,541 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/enabled HTTP/1.1" 200 0
+2025-11-14 09:26:35,542 - DEBUG - _request - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,542 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,543 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/click {}
+2025-11-14 09:26:35,565 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22/click HTTP/1.1" 200 0
+2025-11-14 09:26:35,566 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:35,567 - DEBUG - _request - Finished Request
+2025-11-14 09:26:35,567 - DEBUG - wait_to_see - wait_to_see called with wait=1
+2025-11-14 09:26:36,568 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements {'using': 'tag name', 'value': 'option'}
+2025-11-14 09:26:36,586 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.13/elements HTTP/1.1" 200 0
+2025-11-14 09:26:36,587 - DEBUG - _request - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.22"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.24"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.26"}]} | headers=HTTPHeaderDict({'Content-Length': '479', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:36,588 - DEBUG - _request - Finished Request
+2025-11-14 09:26:36,588 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/selected {}
+2025-11-14 09:26:36,606 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/selected HTTP/1.1" 200 0
+2025-11-14 09:26:36,607 - DEBUG - _request - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:36,607 - DEBUG - _request - Finished Request
+2025-11-14 09:26:36,608 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text {}
+2025-11-14 09:26:36,624 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.20/text HTTP/1.1" 200 0
+2025-11-14 09:26:36,625 - DEBUG - _request - Remote response: status=200 | data={"value":"Name (A to Z)"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:36,626 - DEBUG - _request - Finished Request
+2025-11-14 09:26:36,626 - ERROR - test_product_filters - ❌ Test 'product filters' selhal: Filtr 'Name (Z to A)' nebyl správně aplikován!
+Traceback (most recent call last):
+  File "c:\Users\dominik.svagera\Downloads\autotesting\2025_autumn_tstcourse\Dominik_Švagera\Lekce 6\test.py", line 97, in test_product_filters
+    assert selected_option.text == filter_name, f"Filtr '{filter_name}' nebyl správně aplikován!"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Filtr 'Name (Z to A)' nebyl správně aplikován!
+2025-11-14 09:26:36,629 - DEBUG - test_add_all_products_to_cart - test_add_all_products_to_cart called
+2025-11-14 09:26:36,630 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/elements {'using': 'css selector', 'value': "button[id^='add-to-cart']"}
+2025-11-14 09:26:36,648 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/elements HTTP/1.1" 200 0
+2025-11-14 09:26:36,649 - DEBUG - _request - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.36"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.37"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.38"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.39"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.40"},{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.41"}]} | headers=HTTPHeaderDict({'Content-Length': '713', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:36,650 - DEBUG - _request - Finished Request
+2025-11-14 09:26:36,651 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.36'}, 'id']}
+2025-11-14 09:26:36,667 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:36,668 - DEBUG - _request - Remote response: status=200 | data={"value":"add-to-cart-sauce-labs-backpack"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:36,668 - DEBUG - _request - Finished Request
+2025-11-14 09:26:36,669 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.36/click {}
+2025-11-14 09:26:36,785 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.36/click HTTP/1.1" 200 0
+2025-11-14 09:26:36,786 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:36,787 - DEBUG - _request - Finished Request
+2025-11-14 09:26:36,787 - DEBUG - test_add_all_products_to_cart - Produkt 'sauce-labs-backpack' přidán do košíku
+2025-11-14 09:26:36,788 - DEBUG - wait_to_see - wait_to_see called with wait=0.5
+2025-11-14 09:26:37,289 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.37'}, 'id']}
+2025-11-14 09:26:37,299 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:37,300 - DEBUG - _request - Remote response: status=200 | data={"value":"add-to-cart-sauce-labs-bike-light"} | headers=HTTPHeaderDict({'Content-Length': '45', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:37,302 - DEBUG - _request - Finished Request
+2025-11-14 09:26:37,305 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.37/click {}
+2025-11-14 09:26:37,384 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.37/click HTTP/1.1" 200 0
+2025-11-14 09:26:37,384 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:37,385 - DEBUG - _request - Finished Request
+2025-11-14 09:26:37,386 - DEBUG - test_add_all_products_to_cart - Produkt 'sauce-labs-bike-light' přidán do košíku
+2025-11-14 09:26:37,386 - DEBUG - wait_to_see - wait_to_see called with wait=0.5
+2025-11-14 09:26:37,887 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.38'}, 'id']}
+2025-11-14 09:26:37,895 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:37,896 - DEBUG - _request - Remote response: status=200 | data={"value":"add-to-cart-sauce-labs-bolt-t-shirt"} | headers=HTTPHeaderDict({'Content-Length': '47', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:37,896 - DEBUG - _request - Finished Request
+2025-11-14 09:26:37,897 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.38/click {}
+2025-11-14 09:26:37,961 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.38/click HTTP/1.1" 200 0
+2025-11-14 09:26:37,962 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:37,963 - DEBUG - _request - Finished Request
+2025-11-14 09:26:37,963 - DEBUG - test_add_all_products_to_cart - Produkt 'sauce-labs-bolt-t-shirt' přidán do košíku
+2025-11-14 09:26:37,964 - DEBUG - wait_to_see - wait_to_see called with wait=0.5
+2025-11-14 09:26:38,466 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.39'}, 'id']}
+2025-11-14 09:26:38,475 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:38,481 - DEBUG - _request - Remote response: status=200 | data={"value":"add-to-cart-sauce-labs-fleece-jacket"} | headers=HTTPHeaderDict({'Content-Length': '48', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:38,483 - DEBUG - _request - Finished Request
+2025-11-14 09:26:38,485 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.39/click {}
+2025-11-14 09:26:38,568 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.39/click HTTP/1.1" 200 0
+2025-11-14 09:26:38,569 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:38,570 - DEBUG - _request - Finished Request
+2025-11-14 09:26:38,570 - DEBUG - test_add_all_products_to_cart - Produkt 'sauce-labs-fleece-jacket' přidán do košíku
+2025-11-14 09:26:38,571 - DEBUG - wait_to_see - wait_to_see called with wait=0.5
+2025-11-14 09:26:39,072 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.40'}, 'id']}
+2025-11-14 09:26:39,083 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:39,084 - DEBUG - _request - Remote response: status=200 | data={"value":"add-to-cart-sauce-labs-onesie"} | headers=HTTPHeaderDict({'Content-Length': '41', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:39,085 - DEBUG - _request - Finished Request
+2025-11-14 09:26:39,086 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.40/click {}
+2025-11-14 09:26:39,180 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.40/click HTTP/1.1" 200 0
+2025-11-14 09:26:39,181 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:39,182 - DEBUG - _request - Finished Request
+2025-11-14 09:26:39,182 - DEBUG - test_add_all_products_to_cart - Produkt 'sauce-labs-onesie' přidán do košíku
+2025-11-14 09:26:39,183 - DEBUG - wait_to_see - wait_to_see called with wait=0.5
+2025-11-14 09:26:39,684 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.41'}, 'id']}
+2025-11-14 09:26:39,705 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/execute/sync HTTP/1.1" 200 0
+2025-11-14 09:26:39,710 - DEBUG - _request - Remote response: status=200 | data={"value":"add-to-cart-test.allthethings()-t-shirt-(red)"} | headers=HTTPHeaderDict({'Content-Length': '57', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:39,714 - DEBUG - _request - Finished Request
+2025-11-14 09:26:39,715 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.41/click {}
+2025-11-14 09:26:39,811 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.41/click HTTP/1.1" 200 0
+2025-11-14 09:26:39,812 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:39,813 - DEBUG - _request - Finished Request
+2025-11-14 09:26:39,813 - DEBUG - test_add_all_products_to_cart - Produkt 'test.allthethings()-t-shirt-(red)' přidán do košíku
+2025-11-14 09:26:39,814 - DEBUG - wait_to_see - wait_to_see called with wait=0.5
+2025-11-14 09:26:40,315 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element {'using': 'css selector', 'value': '.shopping_cart_badge'}
+2025-11-14 09:26:40,336 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element HTTP/1.1" 404 0
+2025-11-14 09:26:40,337 - DEBUG - _request - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".shopping_cart_badge\"}\n  (Session info: chrome=142.0.7444.59)","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x8c4093\n\t0x8c40d4\n\t0x6ce71d\n\t0x71a03d\n\t0x71a41b\n\t0x7617f2\n\t0x73c954\n\t0x75ee17\n\t0x73c706\n\t0x70da30\n\t0x70ed54\n\t0xb35744\n\t0xb3091a\n\t0x8ec322\n\t0x8dc458\n\t0x8e31dd\n\t0x8cc408\n\t0x8cc5cc\n\t0x8b675a\n\t0x75747ba9\n\t0x77a1c3ab\n\t0x77a1c32f\n"}} | headers=HTTPHeaderDict({'Content-Length': '540', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:40,338 - DEBUG - _request - Finished Request
+2025-11-14 09:26:40,339 - ERROR - test_add_all_products_to_cart - ❌ Test 'add all products to cart' selhal: Message: no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_badge"}
+  (Session info: chrome=142.0.7444.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x8c4093
+	0x8c40d4
+	0x6ce71d
+	0x71a03d
+	0x71a41b
+	0x7617f2
+	0x73c954
+	0x75ee17
+	0x73c706
+	0x70da30
+	0x70ed54
+	0xb35744
+	0xb3091a
+	0x8ec322
+	0x8dc458
+	0x8e31dd
+	0x8cc408
+	0x8cc5cc
+	0x8b675a
+	0x75747ba9
+	0x77a1c3ab
+	0x77a1c32f
+Traceback (most recent call last):
+  File "c:\Users\dominik.svagera\Downloads\autotesting\2025_autumn_tstcourse\Dominik_Švagera\Lekce 6\test.py", line 126, in test_add_all_products_to_cart
+    cart_badge = driver.find_element(By.CLASS_NAME, "shopping_cart_badge")
+  File "C:\Users\dominik.svagera\Downloads\autotesting\2025_autumn_tstcourse\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 926, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dominik.svagera\Downloads\autotesting\2025_autumn_tstcourse\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dominik.svagera\Downloads\autotesting\2025_autumn_tstcourse\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".shopping_cart_badge"}
+  (Session info: chrome=142.0.7444.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x8c4093
+	0x8c40d4
+	0x6ce71d
+	0x71a03d
+	0x71a41b
+	0x7617f2
+	0x73c954
+	0x75ee17
+	0x73c706
+	0x70da30
+	0x70ed54
+	0xb35744
+	0xb3091a
+	0x8ec322
+	0x8dc458
+	0x8e31dd
+	0x8cc408
+	0x8cc5cc
+	0x8b675a
+	0x75747ba9
+	0x77a1c3ab
+	0x77a1c32f
+
+2025-11-14 09:26:40,352 - DEBUG - test_verify_cart_contents - test_verify_cart_contents called
+2025-11-14 09:26:40,353 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element {'using': 'css selector', 'value': '.shopping_cart_link'}
+2025-11-14 09:26:40,378 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element HTTP/1.1" 200 0
+2025-11-14 09:26:40,379 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.45"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:40,380 - DEBUG - _request - Finished Request
+2025-11-14 09:26:40,380 - DEBUG - execute - POST http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.45/click {}
+2025-11-14 09:26:40,484 - DEBUG - _make_request - http://localhost:54274 "POST /session/bd7f3dbdb3ac229c72e03512fc9eb162/element/f.1219D94083512847F9B0E2D845E394C4.d.8FD5EEB4957595E6561096830EC4D92D.e.45/click HTTP/1.1" 200 0
+2025-11-14 09:26:40,485 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:40,486 - DEBUG - _request - Finished Request
+2025-11-14 09:26:40,487 - DEBUG - wait_to_see - wait_to_see called with wait=1
+2025-11-14 09:26:41,488 - DEBUG - execute - GET http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162/url {}
+2025-11-14 09:26:41,495 - DEBUG - _make_request - http://localhost:54274 "GET /session/bd7f3dbdb3ac229c72e03512fc9eb162/url HTTP/1.1" 200 0
+2025-11-14 09:26:41,505 - DEBUG - _request - Remote response: status=200 | data={"value":"https://www.saucedemo.com/inventory.html"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:41,508 - DEBUG - _request - Finished Request
+2025-11-14 09:26:41,508 - ERROR - test_verify_cart_contents - ❌ Test 'verify cart contents' selhal: Nejsme na stránce košíku!
+Traceback (most recent call last):
+  File "c:\Users\dominik.svagera\Downloads\autotesting\2025_autumn_tstcourse\Dominik_Švagera\Lekce 6\test.py", line 146, in test_verify_cart_contents
+    assert "cart" in driver.current_url.lower(), "Nejsme na stránce košíku!"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Nejsme na stránce košíku!
+2025-11-14 09:26:41,509 - DEBUG - teardown - teardown called - quitting driver
+2025-11-14 09:26:41,510 - DEBUG - execute - DELETE http://localhost:54274/session/bd7f3dbdb3ac229c72e03512fc9eb162 {}
+2025-11-14 09:26:41,845 - DEBUG - _make_request - http://localhost:54274 "DELETE /session/bd7f3dbdb3ac229c72e03512fc9eb162 HTTP/1.1" 200 0
+2025-11-14 09:26:41,846 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 09:26:41,847 - DEBUG - _request - Finished Request
+2025-11-14 09:26:44,139 - INFO - teardown - Driver quit successfully
+2025-11-14 09:26:44,140 - INFO - <module> - === Test execution completed ===
