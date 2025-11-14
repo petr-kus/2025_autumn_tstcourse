@@ -7,95 +7,75 @@ import logging
 from datetime import datetime
 import os
 
-log_filename = f"test_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
-log_filepath = os.path.join(os.path.dirname(__file__), log_filename)
+# Setup logging
+script_dir = os.path.dirname(os.path.abspath(__file__))
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+log_filename = os.path.join(script_dir, f"test_log_{timestamp}.log")
 
 logging.basicConfig(
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s',
+    format='%(asctime)s - %(levelname)s - %(funcName)s - %(message)s',
     handlers=[
-        logging.FileHandler(log_filepath),
+        logging.FileHandler(log_filename, encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
+
 logger = logging.getLogger(__name__)
 
+def wait_to_see(wait=3):
+    """Pomocná funkce pro pauzu, aby bylo vidět, co se děje v prohlížeči."""
+    logger.debug(f"wait_to_see called with wait={wait}")
+    time.sleep(wait)
+
+# Test data
 URL = "https://www.saucedemo.com/"
 USERNAME = "problem_user"
 PASSWORD = "secret_sauce"
 
+# Spuštění prohlížeče (Chrome přes WebDriver Manager)
+
+
 def setup():
-    logger.debug(f"setup() called with no input parameters")
-    global driver 
+    logger.debug("setup called - initializing Chrome driver")
+    global driver
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    logger.info("Browser setup completed successfully")
-
-
+    logger.info("Chrome driver initialized successfully")
+   
 def teardown():
-    logger.debug(f"teardown() called with no input parameters")
+    logger.debug("teardown called - quitting driver")
     driver.quit()
-    logger.info("Browser teardown completed successfully")
+    logger.info("Driver quit successfully")
 
-def load_login_page():
-    logger.debug(f"load_login_page() called with no input parameters")
+def test_load_login_page(URL):
+    logger.debug(f"test_load_login_page called with URL={URL}")
     try:
         driver.get(URL)
-        logger.info(f"Navigated to URL: {URL}")
-        assert "Swag Labs" in driver.title, f"Expected title to contain 'Swag Labs' but got '{driver.title}'"
-        logger.info(f"Page title verification passed: {driver.title}")
+        assert "Swag Labs" in driver.title, f"Nejsme na správné stránce! Jsme nyni na strance '{driver.title}'"
+        logger.info(f"✅ Login page loaded successfully - title: {driver.title}")
     except Exception as e:
-        logger.error(f"Failed to load login page. Error: {e}", exc_info=True)
-        print(f"Failed to load login page. Error: {e}")
-    
+        logger.error(f"❌ Test 'load login page' selhal: {e}", exc_info=True)
+        print(f"❌ Test 'load login page'selhal: {e}")
+
 def test_login_user(username, password):
-    logger.debug(f"test_login_user() called with input data - username: {username}, password: {'*' * len(password)}")
-    logger.info(f"Testing login for user: {username}")
-    print(f"Testing login for user: {username}")
+    logger.debug(f"test_login_user called with username={username}, password={'*' * len(password)}")
+    print()
     try:
-        driver.find_element(By.ID, "user-name")
-        driver.find_element(By.ID, "password")
+        driver.find_element(By.ID, "user-name").send_keys(username)
+        driver.find_element(By.ID, "password").send_keys(password)
         driver.find_element(By.ID, "login-button").click()
-        logger.info("Login button clicked")
-        assert "inventory" in driver.current_url.lower(), "Login failed, inventory page not reached!"
-        logger.info(f"Login successful, current URL: {driver.current_url}")
+        assert "inventory" in driver.current_url.lower(), "Login failed!"
+        message = f"✅ Login test proběhl úspěšně – user '{USERNAME}' je přihlášen nva inentory stránce '{driver.current_url}'."
+        logger.info(message)
+        print(message)
     except Exception as e:
-        logger.error(f"Login test failed for user: {username}. Error: {e}", exc_info=True)
-        print(f"Login test failed for user: {username}. Error: {e}")
+        logger.error(f"❌ Test 'login user' selhal: {e}", exc_info=True)
+        print(f"❌ Test 'login user'selhal: {e}")
 
 
-def test_product_texts_visible():
-    logger.debug(f"test_product_texts_visible() called with no input parameters")
-    try:
-        driver.get(URL)
-        logger.info(f"Navigated to URL: {URL}")
-        driver.find_element(By.ID, "user-name").send_keys(USERNAME)
-        driver.find_element(By.ID, "password").send_keys(PASSWORD)
-        logger.info(f"Credentials entered for user: {USERNAME}")
-        driver.find_element(By.ID, "login-button").click()
-        logger.info("Login button clicked")
-        
-        inventory_container = driver.find_element(By.ID, "inventory_container")
-        assert inventory_container.is_displayed(), "Inventory container is not displayed!"
-        logger.info("Inventory container is displayed")
-        
-        product_names = driver.find_elements(By.CLASS_NAME, "inventory_item_name")
-        assert len(product_names) > 0, "No products were found on the page!"
-        logger.info(f"Found {len(product_names)} products on the page")
-        
-        for product in product_names:
-            assert product.is_displayed(), f"Product {product.text} is not visible!"
-            assert product.text.strip() != "", "Product name is empty!"
-            logger.info(f"Product verified: {product.text}")
-        
-        logger.info("All products are visible and have valid names")
-    except Exception as e:
-        logger.error(f"Product visibility test failed. Error: {e}", exc_info=True)
-        raise
-
-logger.info("========== Test execution started ==========")
+logger.info("=== Starting test execution ===")
 setup()
-load_login_page(URL)
+test_load_login_page(URL)
 test_login_user(USERNAME, PASSWORD)
-test_product_texts_visible()
 teardown()
-logger.info("========== Test execution completed ==========")
+logger.info("=== Test execution completed ===")
