@@ -1,0 +1,87 @@
+2025-11-14 08:30:41,465 - INFO - <module> - === Starting test execution ===
+2025-11-14 08:30:41,465 - DEBUG - setup - setup called - initializing Chrome driver
+2025-11-14 08:30:41,466 - INFO - log - ====== WebDriver manager ======
+2025-11-14 08:30:43,456 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 08:30:43,464 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 08:30:43,980 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 08:30:44,026 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 08:30:44,034 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 08:30:44,410 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 08:30:44,458 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 08:30:44,460 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 08:30:44,830 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 08:30:44,871 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 08:30:45,260 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/known-good-versions-with-downloads.json HTTP/1.1" 200 118544
+2025-11-14 08:30:45,434 - INFO - log - WebDriver version 142.0.7444.162 selected
+2025-11-14 08:30:45,441 - INFO - log - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/win32/chromedriver-win32.zip
+2025-11-14 08:30:45,442 - INFO - log - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/win32/chromedriver-win32.zip
+2025-11-14 08:30:45,444 - DEBUG - _new_conn - Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-11-14 08:30:45,870 - DEBUG - _make_request - https://storage.googleapis.com:443 "GET /chrome-for-testing-public/142.0.7444.162/win32/chromedriver-win32.zip HTTP/1.1" 200 8903123
+2025-11-14 08:30:45,871 - INFO - log - Driver downloading response is 200
+2025-11-14 08:30:46,810 - INFO - log - Get LATEST chromedriver version for google-chrome
+2025-11-14 08:30:46,813 - DEBUG - _new_conn - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-11-14 08:30:47,203 - DEBUG - _make_request - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 14089
+2025-11-14 08:30:47,441 - INFO - log - Driver has been saved in cache [C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162]
+2025-11-14 08:30:47,461 - DEBUG - _binary_paths - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe
+2025-11-14 08:30:47,586 - DEBUG - _start_process - Started executable: `C:\Users\dominik.svagera\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe` in a child process with pid: 26924 using 0 to output -3
+2025-11-14 08:30:48,098 - DEBUG - execute - POST http://localhost:52223/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2025-11-14 08:30:48,099 - DEBUG - _new_conn - Starting new HTTP connection (1): localhost:52223
+2025-11-14 08:30:49,189 - DEBUG - _make_request - http://localhost:52223 "POST /session HTTP/1.1" 200 0
+2025-11-14 08:30:49,189 - DEBUG - _request - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"142.0.7444.59","chrome":{"chromedriverVersion":"142.0.7444.162 (c076baf266c3ed5efb225de664cfa7b183668ad6-refs/branch-heads/7444@{#2498})","userDataDir":"C:\\Users\\DOMINI~1.SVA\\AppData\\Local\\Temp\\scoped_dir26924_1816173289"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52226"},"goog:processID":5020,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f73aa09b525166c8fab7292082ab36c5"}} | headers=HTTPHeaderDict({'Content-Length': '912', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:49,190 - DEBUG - _request - Finished Request
+2025-11-14 08:30:49,191 - INFO - setup - Chrome driver initialized successfully
+2025-11-14 08:30:49,191 - DEBUG - test_load_login_page - test_load_login_page called with URL=https://www.saucedemo.com/
+2025-11-14 08:30:49,192 - DEBUG - execute - POST http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/url {'url': 'https://www.saucedemo.com/'}
+2025-11-14 08:30:50,715 - DEBUG - _make_request - http://localhost:52223 "POST /session/f73aa09b525166c8fab7292082ab36c5/url HTTP/1.1" 200 0
+2025-11-14 08:30:50,716 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:50,721 - DEBUG - _request - Finished Request
+2025-11-14 08:30:50,726 - DEBUG - execute - GET http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/title {}
+2025-11-14 08:30:51,652 - DEBUG - _make_request - http://localhost:52223 "GET /session/f73aa09b525166c8fab7292082ab36c5/title HTTP/1.1" 200 0
+2025-11-14 08:30:51,653 - DEBUG - _request - Remote response: status=200 | data={"value":"Swag Labs"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:51,653 - DEBUG - _request - Finished Request
+2025-11-14 08:30:51,653 - DEBUG - execute - GET http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/title {}
+2025-11-14 08:30:51,662 - DEBUG - _make_request - http://localhost:52223 "GET /session/f73aa09b525166c8fab7292082ab36c5/title HTTP/1.1" 200 0
+2025-11-14 08:30:51,662 - DEBUG - _request - Remote response: status=200 | data={"value":"Swag Labs"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:51,664 - DEBUG - _request - Finished Request
+2025-11-14 08:30:51,665 - INFO - test_load_login_page - ✅ Login page loaded successfully - title: Swag Labs
+2025-11-14 08:30:51,665 - DEBUG - test_login_user - test_login_user called with username=problem_user, password=************
+2025-11-14 08:30:51,666 - DEBUG - execute - POST http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/element {'using': 'css selector', 'value': '[id="user-name"]'}
+2025-11-14 08:30:51,679 - DEBUG - _make_request - http://localhost:52223 "POST /session/f73aa09b525166c8fab7292082ab36c5/element HTTP/1.1" 200 0
+2025-11-14 08:30:51,681 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.2"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:51,682 - DEBUG - _request - Finished Request
+2025-11-14 08:30:51,683 - DEBUG - execute - POST http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/element/f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.2/value {'text': 'problem_user', 'value': ['p', 'r', 'o', 'b', 'l', 'e', 'm', '_', 'u', 's', 'e', 'r']}
+2025-11-14 08:30:51,772 - DEBUG - _make_request - http://localhost:52223 "POST /session/f73aa09b525166c8fab7292082ab36c5/element/f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.2/value HTTP/1.1" 200 0
+2025-11-14 08:30:51,772 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:51,773 - DEBUG - _request - Finished Request
+2025-11-14 08:30:51,773 - DEBUG - execute - POST http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/element {'using': 'css selector', 'value': '[id="password"]'}
+2025-11-14 08:30:51,786 - DEBUG - _make_request - http://localhost:52223 "POST /session/f73aa09b525166c8fab7292082ab36c5/element HTTP/1.1" 200 0
+2025-11-14 08:30:51,786 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:51,787 - DEBUG - _request - Finished Request
+2025-11-14 08:30:51,787 - DEBUG - execute - POST http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/element/f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.3/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+2025-11-14 08:30:51,891 - DEBUG - _make_request - http://localhost:52223 "POST /session/f73aa09b525166c8fab7292082ab36c5/element/f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.3/value HTTP/1.1" 200 0
+2025-11-14 08:30:51,891 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:51,892 - DEBUG - _request - Finished Request
+2025-11-14 08:30:51,892 - DEBUG - execute - POST http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/element {'using': 'css selector', 'value': '[id="login-button"]'}
+2025-11-14 08:30:51,904 - DEBUG - _make_request - http://localhost:52223 "POST /session/f73aa09b525166c8fab7292082ab36c5/element HTTP/1.1" 200 0
+2025-11-14 08:30:51,905 - DEBUG - _request - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:51,905 - DEBUG - _request - Finished Request
+2025-11-14 08:30:51,906 - DEBUG - execute - POST http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/element/f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.4/click {}
+2025-11-14 08:30:52,020 - DEBUG - _make_request - http://localhost:52223 "POST /session/f73aa09b525166c8fab7292082ab36c5/element/f.17711DCD3D6508802FCEC2DC4977A5E8.d.F14C8A7EDB6DE68508C3D0DD453FEC94.e.4/click HTTP/1.1" 200 0
+2025-11-14 08:30:52,021 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:52,022 - DEBUG - _request - Finished Request
+2025-11-14 08:30:52,022 - DEBUG - execute - GET http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/url {}
+2025-11-14 08:30:52,029 - DEBUG - _make_request - http://localhost:52223 "GET /session/f73aa09b525166c8fab7292082ab36c5/url HTTP/1.1" 200 0
+2025-11-14 08:30:52,030 - DEBUG - _request - Remote response: status=200 | data={"value":"https://www.saucedemo.com/inventory.html"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:52,032 - DEBUG - _request - Finished Request
+2025-11-14 08:30:52,033 - DEBUG - execute - GET http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5/url {}
+2025-11-14 08:30:52,040 - DEBUG - _make_request - http://localhost:52223 "GET /session/f73aa09b525166c8fab7292082ab36c5/url HTTP/1.1" 200 0
+2025-11-14 08:30:52,040 - DEBUG - _request - Remote response: status=200 | data={"value":"https://www.saucedemo.com/inventory.html"} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:52,040 - DEBUG - _request - Finished Request
+2025-11-14 08:30:52,041 - INFO - test_login_user - ✅ Login test proběhl úspěšně – user 'problem_user' je přihlášen nva inentory stránce 'https://www.saucedemo.com/inventory.html'.
+2025-11-14 08:30:52,042 - DEBUG - teardown - teardown called - quitting driver
+2025-11-14 08:30:52,042 - DEBUG - execute - DELETE http://localhost:52223/session/f73aa09b525166c8fab7292082ab36c5 {}
+2025-11-14 08:30:52,244 - DEBUG - _make_request - http://localhost:52223 "DELETE /session/f73aa09b525166c8fab7292082ab36c5 HTTP/1.1" 200 0
+2025-11-14 08:30:52,245 - DEBUG - _request - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-11-14 08:30:52,245 - DEBUG - _request - Finished Request
+2025-11-14 08:30:54,376 - INFO - teardown - Driver quit successfully
+2025-11-14 08:30:54,377 - INFO - <module> - === Test execution completed ===
