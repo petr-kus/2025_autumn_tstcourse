@@ -8,7 +8,6 @@ import logging
 from datetime import datetime
 import os
 
-# Setup logging
 script_dir = os.path.dirname(os.path.abspath(__file__))
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 log_filename = os.path.join(script_dir, f"test_log_{timestamp}.log")
@@ -29,12 +28,9 @@ def wait_to_see(wait=3):
     logger.debug(f"wait_to_see called with wait={wait}")
     time.sleep(wait)
 
-# Test data
 URL = "https://www.saucedemo.com/"
 USERNAME = "problem_user"
 PASSWORD = "secret_sauce"
-
-# Spuštění prohlížeče (Chrome přes WebDriver Manager)
 
 
 def setup():
