@@ -7,8 +7,6 @@ from pagemodel.inventory_page import InventoryPage
 import logging
 
 
-
-
 def setup_logging():
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')    
 
@@ -28,6 +26,7 @@ def setup():
     driver.implicitly_wait(5)
     driver.maximize_window()
     logging.info("Browser initialized and maximized.")
+
 
 def test_login_page(URL, USERNAME, PASSWORD):
     try:

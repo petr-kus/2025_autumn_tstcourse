@@ -54,7 +54,8 @@ class InventoryPage():
         image_src = product_image.get_attribute("src")
         product_image.click()
         return image_src
-    
+
+
     def get_detail_image_src(self):
         detail_image = self.driver.find_element(By.CLASS_NAME, "inventory_details_img")
         return detail_image.get_attribute("src")
@@ -65,6 +66,7 @@ class InventoryPage():
         name_product_text = name_product.text
         name_product.click()
         return name_product_text
+   
     
     def get_detail_name(self):
         detail_name = self.driver.find_element(By.CLASS_NAME, "inventory_details_name")
