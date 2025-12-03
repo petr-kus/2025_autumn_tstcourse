@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.options import Options
 from pagemodel.login_page import LoginPage
 from pagemodel.inventory_page import InventoryPage
 import logging
-import time
 
 
 def setup_logging():
@@ -23,10 +22,11 @@ def setup():
             }
     options.add_experimental_option("prefs", prefs)
     global driver
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    driver.implicitly_wait(5)
     driver.maximize_window()
-    driver.implicitly_wait(2)
     logging.info("Browser initialized and maximized.")
+
 
 def test_login_page(URL, USERNAME, PASSWORD):
     try:
@@ -55,52 +55,57 @@ def test_add_to_cart():
 
         random_product = inventory_page.choose_random_product(displayed_all_products)
         assert random_product is not None, "Failed to select a random product."
-        logging.info("Random product selected successfully.")
+        logging.info(f"Random product '{random_product}' selected successfully.")
 
         added_random_product = inventory_page.add_to_cart(random_product)
-        logging.info(f"Random product '{inventory_page.last_added_product_name}' added to cart.")
-
+        logging.info(f"Random product '{added_random_product}' added to cart.")
+       
         cart_count = inventory_page.cart_count()
         assert cart_count == 1, f"Cart count expected to be 1 but got {cart_count}."
         logging.info("Cart count verified successfully.")
-
-        go_to_cart = inventory_page.go_to_cart()
+        
+        inventory_page.go_to_cart()
         assert "cart" in driver.current_url.lower(), "Failed to navigate to cart page."
         logging.info("Navigated to cart page.")
 
+        driver.back()
+        
         return random_product
 
     except Exception as e:
         logging.error(f"Test failed: {e}")
-        raise
+        
 
+def test_click_product_image(random_product):
+    try:
+        inventory_page = InventoryPage(driver)
+                
+        random_product = inventory_page.choose_random_product(inventory_page.display_products())
+        selected_image_src = inventory_page.click_product_image(random_product)
+        detail_image_src = inventory_page.get_detail_image_src()
+        assert selected_image_src is not None, "Failed to get selected product image src."
+        assert selected_image_src == detail_image_src, (f"Expected image src {selected_image_src} but got {detail_image_src}.") 
+        logging.info("Product image displayed successfully.")
 
-def test_display_item_image(random_product):
+        driver.back()
+       
+    except Exception as e:
+        logging.error(f"Test failed: {e}")
+        
+
+def test_click_product_name(random_product):
     try:
         inventory_page = InventoryPage(driver)
         
-        image_product = inventory_page.display_image_item(random_product)
-        assert "sauce" in image_product, "Failed to display product image."
-        assert "labs" in image_product, "Failed to display product image."
-        logging.info("Product image displayed successfully.")
-
-    except Exception as e:
-        logging.error(f"Test failed: {e}")
-        raise
-
-
-def test_display_details_item(random_product):
-    try:
-        inventory_page = InventoryPage(driver)
-
-        name_product = inventory_page.display_details_item(random_product)
-        assert "Sauce" in name_product, "Failed to display product details."
-        assert "Bike" in name_product, "Failed to display product details."
+        random_product = inventory_page.choose_random_product(inventory_page.display_products())
+        selected_name = inventory_page.click_product_name(random_product)
+        detail_name = inventory_page.get_detail_name()
+        assert selected_name == detail_name, (f"Expected product {selected_name} but got {detail_name}.")
         logging.info("Product details displayed successfully.")
 
     except Exception as e:
         logging.error(f"Test failed: {e}")
-        raise
+        
 
 def teardown():
     driver.quit()
@@ -111,7 +116,7 @@ setup_logging()
 setup()
 test_login_page("https://www.saucedemo.com/", "standard_user", "secret_sauce")
 random_product = test_add_to_cart()
-test_display_item_image(random_product)
-test_display_details_item(random_product)
+test_click_product_image(random_product)
+test_click_product_name(random_product)
 teardown()
 
