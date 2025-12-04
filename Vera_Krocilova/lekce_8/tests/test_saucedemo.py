@@ -45,6 +45,7 @@ def test_add_to_cart(browser):
     inventory_page.go_to_cart()
     assert "cart" in browser.current_url.lower(), "Failed to navigate to cart page."
     logging.info("Navigated to cart page.")
+    #LEKTOR: zde bych obecne doporucil majoritu toho logovani presunout do metod v page obejct modelu
 
     inventory_page.driver.back()
          

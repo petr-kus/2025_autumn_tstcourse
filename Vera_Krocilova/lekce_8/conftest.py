@@ -12,10 +12,13 @@ URL = "https://www.saucedemo.com/"
 USERNAME = "standard_user"
 PASSWORD = "secret_sauce"
 
+#LEKTOR: zde bych si to urcite zalogoval do souboru a vyhodil bych to z fixture (to uz logging nenastavis)
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='test.log')
 @pytest.fixture(autouse=True, scope="session")
 def setup_logging():
-    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')    
-
+        print("Logging is not set in fixture")
+    
+    
 @pytest.fixture(autouse=True, scope="session")
 def browser():
     options = Options()
