@@ -6,7 +6,8 @@ import time
 import logging
 from datetime import datetime
 import os
-from pagemodel.login_page import LoginPage
+from ..POM.LoginPage import LoginPage
+#LEKTOR: tady je spatny import (opravuji...) ... je tu vic problemu nez jen import...
 import pytest  
 
 
