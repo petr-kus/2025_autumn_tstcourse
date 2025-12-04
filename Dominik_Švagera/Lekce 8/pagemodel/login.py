@@ -5,12 +5,13 @@ logger = logging.getLogger(__name__)
 
 
 class LoginPage:
-    
+    #LEKTOR: toto jsou testovaci data nemela by byt ve tride POM ale na urovni zapisu test casu
     SAUCEDEMO_URL = "https://www.saucedemo.com/"
     STANDARD_USER = "standard_user"
     PROBLEM_USER = "problem_user"
     PASSWORD = "secret_sauce"
     
+    #LEKTOR: toto uz je ok...
     USERNAME_INPUT = (By.ID, "user-name")
     PASSWORD_INPUT = (By.ID, "password")
     LOGIN_BUTTON = (By.ID, "login-button")
