@@ -4,8 +4,17 @@
 /Dominik_Švagera/Lekce 7/test_log_20251124_182434.log
 /Dominik_Švagera/Lekce 7/test_log_20251124_184623.log
 /Dominik_Švagera/Lekce 7/pagemode/__pycache__/
+<<<<<<< HEAD
 /Vera_Krocilova/lekce_8/__pycache__/conftest.cpython-314-pytest-9.0.1.pyc
 /Vera_Krocilova/lekce_8/pages/__pycache__/__init__.cpython-314.pyc
 /Vera_Krocilova/lekce_8/pages/__pycache__/inventory_page.cpython-314.pyc
 /Vera_Krocilova/lekce_8/pages/__pycache__/login_page.cpython-314.pyc
 /Vera_Krocilova/lekce_8/tests/__pycache__/test_saucedemo.cpython-314-pytest-9.0.1.pyc
+=======
+/Dominik_Švagera/Lekce 8/__pycache__/conftest.cpython-311-pytest-8.3.3.pyc
+/Dominik_Švagera/Lekce 8/__pycache__/test_saucedemo.cpython-311-pytest-8.3.3.pyc
+/Dominik_Švagera/Lekce 8/pagemodel/__pycache__/__init__.cpython-311.pyc
+/Dominik_Švagera/Lekce 8/pagemodel/__pycache__/cart.cpython-311.pyc
+/Dominik_Švagera/Lekce 8/pagemodel/__pycache__/inventory.cpython-311.pyc
+/Dominik_Švagera/Lekce 8/pagemodel/__pycache__/login.cpython-311.pyc
+>>>>>>> 6ca745b648aa38e0c071a34806ee458021b23c06
