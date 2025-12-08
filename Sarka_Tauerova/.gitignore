@@ -1,28 +1,33 @@
-# Ignoruj vše, kromě podadresářů
-# (tohle nahoře ODSTRANIT ❗❗❗)
-# *
-
-# Python cache
 __pycache__/
 *.pyc
+*.pyo
+*$py.class
 
-# Virtual environment
 venv/
 .env/
+.env.*
+.venv/
 
-# pytest cache
 .pytest_cache/
 
-# Logs
 *.log
 test_debug.log
 
-# Chrome temp profiles
 selenium-profile-*/
 
-# VSCode
 .vscode/
+*.code-workspace
 
-# OS files
 Thumbs.db
 .DS_Store
+
+build/
+dist/
+*.egg-info/
+
+*~
+*.swp
+*.tmp
+*.bak
+
+*.odt
