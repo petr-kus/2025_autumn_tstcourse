@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-10T09:35:26.501889" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\github\2025_autumn_tstcourse\Marketak\lekce_9_robot\test.robot">
+<test id="s1-t1" name="Cart badge behavior" line="15">
+<kw name="Browser is running" owner="Browser">
+<msg time="2025-12-10T09:35:26.852490" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2025-12-10T09:35:29.148757" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:29.902743" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:30.512947" level="INFO">Driver [C:\Users\marke\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache</msg>
+<msg time="2025-12-10T09:35:31.937279" level="INFO">${browser} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6fa67f3475eab7a360fbca2edd5aa691")&gt;</msg>
+<var>${browser}</var>
+<status status="PASS" start="2025-12-10T09:35:26.852234" elapsed="5.085264"/>
+</kw>
+<kw name="Open ${PAGE} in ${browser}" owner="LoginPage" source_name="Open ${page} in ${browser}">
+<status status="PASS" start="2025-12-10T09:35:31.939102" elapsed="0.695812"/>
+</kw>
+<kw name="Login User" owner="LoginPage">
+<msg time="2025-12-10T09:35:32.635937" level="FAIL">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</msg>
+<arg>${STANDARD_USER}</arg>
+<arg>${PASSWORD}</arg>
+<status status="FAIL" start="2025-12-10T09:35:32.635481" elapsed="0.000539">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</kw>
+<kw name="Add backpack to cart in ${browser}" owner="InventoryPage" source_name="Add backpack to cart in ${browser}">
+<status status="NOT RUN" start="2025-12-10T09:35:32.637203" elapsed="0.000081"/>
+</kw>
+<kw name="Cart badge should show 1 in ${browser}" owner="InventoryPage" source_name="Cart badge should show 1 in ${browser}">
+<status status="NOT RUN" start="2025-12-10T09:35:32.637760" elapsed="0.000064"/>
+</kw>
+<doc>Po přidání batohu do košíku se u ikonky košíku zobrazí číslo 1</doc>
+<status status="FAIL" start="2025-12-10T09:35:26.851177" elapsed="5.787165">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</test>
+<test id="s1-t2" name="Login User" line="23">
+<kw name="Login User Template">
+<kw name="Browser is running" owner="Browser">
+<msg time="2025-12-10T09:35:32.646215" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2025-12-10T09:35:35.980265" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:37.261819" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:38.495128" level="INFO">Driver [C:\Users\marke\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache</msg>
+<msg time="2025-12-10T09:35:40.406649" level="INFO">${browser} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="73f4c7eb6045ca113f4db3f12e0b980e")&gt;</msg>
+<var>${browser}</var>
+<status status="PASS" start="2025-12-10T09:35:32.645551" elapsed="7.761272"/>
+</kw>
+<kw name="Open ${page} in ${browser}" owner="LoginPage" source_name="Open ${page} in ${browser}">
+<status status="PASS" start="2025-12-10T09:35:40.408409" elapsed="0.572947"/>
+</kw>
+<kw name="Login User" owner="LoginPage">
+<msg time="2025-12-10T09:35:40.982132" level="FAIL">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-12-10T09:35:40.981695" elapsed="0.000538">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</kw>
+<arg>${PAGE}</arg>
+<arg>${STANDARD_USER}</arg>
+<arg>${PASSWORD}</arg>
+<status status="FAIL" start="2025-12-10T09:35:32.644505" elapsed="8.337983">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</kw>
+<kw name="Login User Template">
+<kw name="Browser is running" owner="Browser">
+<msg time="2025-12-10T09:35:40.984704" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2025-12-10T09:35:44.555224" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:46.265700" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:47.722555" level="INFO">Driver [C:\Users\marke\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache</msg>
+<msg time="2025-12-10T09:35:49.571867" level="INFO">${browser} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="73a9098666566b3adac514618152a38d")&gt;</msg>
+<var>${browser}</var>
+<status status="PASS" start="2025-12-10T09:35:40.984277" elapsed="8.587662"/>
+</kw>
+<kw name="Open ${page} in ${browser}" owner="LoginPage" source_name="Open ${page} in ${browser}">
+<status status="PASS" start="2025-12-10T09:35:49.572709" elapsed="0.149712"/>
+</kw>
+<kw name="Login User" owner="LoginPage">
+<msg time="2025-12-10T09:35:49.723654" level="FAIL">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-12-10T09:35:49.723046" elapsed="0.000714">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</kw>
+<arg>${PAGE}</arg>
+<arg>${PROBLEM_USER}</arg>
+<arg>${PASSWORD}</arg>
+<status status="FAIL" start="2025-12-10T09:35:40.983264" elapsed="8.740944">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</kw>
+<doc>Ukázka [Template] – login + logout pro různé uživatele</doc>
+<status status="FAIL" start="2025-12-10T09:35:32.640053" elapsed="17.086349">Several failures occurred:
+
+1) Keyword 'LoginPage.Login User' expected 3 arguments, got 2.
+
+2) Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</test>
+<test id="s1-t3" name="Logout user" line="29">
+<kw name="Browser is running" owner="Browser">
+<msg time="2025-12-10T09:35:49.732145" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2025-12-10T09:35:53.333823" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:54.840412" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2025-12-10T09:35:56.032920" level="INFO">Driver [C:\Users\marke\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache</msg>
+<msg time="2025-12-10T09:35:57.895416" level="INFO">${browser} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="73ed05f423f9a225db3aba646fffb3f4")&gt;</msg>
+<var>${browser}</var>
+<status status="PASS" start="2025-12-10T09:35:49.731688" elapsed="8.163860"/>
+</kw>
+<kw name="Open ${PAGE} in ${browser}" owner="LoginPage" source_name="Open ${page} in ${browser}">
+<status status="PASS" start="2025-12-10T09:35:57.897279" elapsed="0.614660"/>
+</kw>
+<kw name="Login User" owner="LoginPage">
+<msg time="2025-12-10T09:35:58.513023" level="FAIL">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</msg>
+<arg>${STANDARD_USER}</arg>
+<arg>${PASSWORD}</arg>
+<status status="FAIL" start="2025-12-10T09:35:58.512656" elapsed="0.000446">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</kw>
+<kw name="Logout via menu in ${browser}" owner="InventoryPage" source_name="Logout via menu in ${browser}">
+<status status="NOT RUN" start="2025-12-10T09:35:58.513938" elapsed="0.000059"/>
+</kw>
+<doc>Odhlášení uživatele přes menu</doc>
+<status status="FAIL" start="2025-12-10T09:35:49.730758" elapsed="8.783848">Keyword 'LoginPage.Login User' expected 3 arguments, got 2.</status>
+</test>
+<doc>Saucedemo – Robot Framework test (login, košík, logout)</doc>
+<status status="FAIL" start="2025-12-10T09:35:26.504284" elapsed="32.012005"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="0" fail="3" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
