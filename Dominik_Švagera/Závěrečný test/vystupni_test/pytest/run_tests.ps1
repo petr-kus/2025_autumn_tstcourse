@@ -6,7 +6,7 @@ Write-Host "Running PyTest Tests" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-python -m pytest -v
+py -3.14 -m pytest -v
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan

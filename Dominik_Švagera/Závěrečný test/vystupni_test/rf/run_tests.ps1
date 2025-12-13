@@ -6,7 +6,7 @@ Write-Host "Running Robot Framework Tests" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-python -m robot -d logs test_web_app.robot
+py -3.14 -m robot -d logs test_web_app.robot
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan
