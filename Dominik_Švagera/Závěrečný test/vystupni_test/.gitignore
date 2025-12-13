@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# PyTest
+.pytest_cache/
+.cache
+
+# Robot Framework
+output.xml
+log.html
+report.html
+selenium-screenshot-*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs (keep directory structure but ignore log files)
+*.log
+
+# Chrome Driver
+chromedriver.exe
+chromedriver
+geckodriver.exe
+geckodriver
+
+# Node modules
+node_modules/
+package-lock.json

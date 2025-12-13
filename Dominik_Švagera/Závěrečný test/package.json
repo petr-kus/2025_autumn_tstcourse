@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pytest": "^1.0.0",
+    "selenium": "^2.20.0"
+  }
+}
