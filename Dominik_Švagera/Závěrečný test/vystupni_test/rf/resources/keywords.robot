@@ -12,7 +12,7 @@ Teardown Test Suite
     Log    Test suite completed    INFO
 
 Open Browser To Login Page
-    [Arguments]    ${url}=${URL}    ${browser}=${BROWSER}
+    [Arguments]    ${url}=https://www.saucedemo.com/    ${browser}=Chrome
     Log    Opening browser: ${browser}    INFO
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
