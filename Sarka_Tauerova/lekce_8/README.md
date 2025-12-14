@@ -1,81 +1,80 @@
-# Lekce 8 – Strukturovaný test (POM + pytest)
+# Lekce 8 – Automatizované testy (Pytest + Page Object Model)
 
-Tento projekt obsahuje řešení úkolu z **lekce 8**, jehož cílem bylo převést existující testovací scénáře do přehledné a udržovatelné struktury s využitím objektového přístupu.
-
-Projekt je postaven tak, aby bylo snadné:
-- přidávat nové testovací scénáře,
-- testovat různé typy uživatelů,
-- rozšiřovat funkcionalitu bez zásahů do existujících testů.
+Tento projekt obsahuje řešení úkolu z **lekce 8** kurzu automatizovaného testování.  
+Cílem je strukturovat testy pomocí **Page Object Modelu (POM)** a **pytestu** tak,
+aby byly čitelné, rozšiřitelné a snadno udržovatelné.
 
 ---
-
 ## Použité principy
-
-- **Page Object Model (POM)**
-- **Object Oriented Programming (OOP)**
-- **pytest + fixtures**
-- **Parametrizace testů**
-- **Domain Language** (čitelné názvy metod a kroků)
+- Page Object Model (POM)
+- Pytest + fixtures
+- Parametrizace testů
+- Oddělení testovací logiky a testovacích dat
+- Čitelný „Domain Language“ v testech
 
 ---
-
 ## Struktura projektu
-
+```text
 lekce_8/
-├── pages/ # Page Objecty aplikace
-├── tests/ # Testovací scénáře
-├── conftest.py # Fixtures a testovací data
-├── pytest.ini # Nastavení pytestu
-├── requirements.txt
-└── README.md
-
+├─ pages/
+│  ├─ base_page.py
+│  ├─ burger_menu.py
+│  ├─ cart_page.py
+│  ├─ checkout_page.py
+│  ├─ header.py
+│  ├─ inventory_page.py
+│  └─ login_page.py
+├─ tests/
+│  ├─ test_login.py
+│  ├─ test_problem_user.py
+│  └─ test_purchase_flow.py
+├─ conftest.py
+├─ pytest.ini
+├─ requirements.txt
+├─ install_dependencies.ps1
+└─ README.md
+```
 ---
-
 ## Instalace a prostředí
-
-V adresáři je připraven skript:
-
+V adresáři projektu je připraven PowerShell skript:
 install_dependencies.ps1
 
-Skript:
-- vytvoří virtuální prostředí,
-- nainstaluje potřebné balíčky,
-- uloží závislosti do `requirements.txt`.
+Skript provede:
+- vytvoření virtuálního prostředí,
+- instalaci potřebných balíčků,
+- uložení závislostí do `requirements.txt`.
+
+---
+## Spuštění testů
+1. Aktivuj virtuální prostředí:
+.\venv\Scripts\Activate.ps1
+
+2. Spusť testy:
+pytest
+
+Nastavení pytestu:
+- zapnuté logování na úrovni `INFO`,
+- testy se zastaví při první chybě,
+- výstup je zkrácený a přehledný.
 
 ---
 
-## Spuštění testů
+## Chování testů
+- **locked_out_user**  
+  Negativní scénář – očekává se chyba při přihlášení.
 
-Po aktivaci virtuálního prostředí:
+- **problem_user**  
+  Negativní scénář – checkout nesmí být úspěšně dokončen.
 
-```bash
-pytest
-Nastavení pytestu:
+- **performance_glitch_user**  
+  Známá chyba aplikace:
+  - badge v košíku může zobrazovat nesprávný počet položek,
+  - test proto ověřuje skutečný obsah košíku,
+  - test je označen jako `xfail` (očekávané selhání).
 
-zapnuté logování (INFO),
-
-testy se zastaví při první chybě,
-
-výstup je zkrácený a přehledný.
-
-Poznámky k chování testů
-locked_out_user je negativní scénář – očekává se chyba při loginu.
-
-problem_user je záměrně problematický účet – checkout nesmí projít.
-
-performance_glitch_user má známé UI chyby:
-
-badge v košíku může ukazovat nesprávný počet položek,
-
-test proto ověřuje skutečný obsah košíku, nikoli pouze badge.
-
-Toto chování je vědomé a odpovídá zadání.
-
-Cíl řešení
-Cílem nebylo vytvořit „nejkratší test“, ale:
-
-čitelný testovací scénář,
-
-jasně oddělenou logiku,
-
-strukturu připravenou pro další rozšiřování.
+---
+## Poznámka
+Projekt je strukturován tak, aby bylo možné snadno:
+- přidat další testovací scénáře,
+- rozšířit Page Objecty,
+- pracovat s různými typy uživatelů bez duplikace kódu.
