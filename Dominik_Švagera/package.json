@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "webdriver-manager": "^12.1.9"
+  }
+}
